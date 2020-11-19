@@ -44,6 +44,10 @@ return [
         'users' => 'users',
     ],
 
+    'column_names' => [
+        'user_id' => 'user_id'
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Application Permissions

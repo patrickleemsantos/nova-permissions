@@ -31,7 +31,7 @@ class Role extends Model
 
     public function users()
     {
-        return $this->belongsToMany(config('nova-permissions.user_model', 'App\Models\User'), config('nova-permissions.table_names.role_user', 'role_user'), 'role_id', 'user_id');
+        return $this->belongsToMany(config('nova-permissions.user_model', 'App\Models\User'), config('nova-permissions.table_names.role_user', 'role_user'), 'role_id', config('nova-permissions.column_names.user_id', 'role_user'));
     }
 
     public function getPermissions()
